@@ -58,8 +58,8 @@ public class LoadBase {
 		try {
 			datafile = FileChannel.open(Paths.get("baseperm.data"),
 					StandardOpenOption.READ);
-			OwnedStriple[] striples = new OwnedStriple[15];
-			Striple[] notownstriples = new Striple[15];
+			OwnedStriple[] striples = new OwnedStriple[17];
+			Striple[] notownstriples = new Striple[17];
 			int i = 0;
 			for (ReadStriple st : Storage.initReadStripleIterator(datafile,
 					new StripleData.LibStripleResolver())) {
@@ -125,11 +125,11 @@ public class LoadBase {
 
 			// Doing some public check
 			System.out.println("doing public checking");
-			OwnedStriple pubkind = striples[9];
-			boolean check11 = striples[11].check(pubkind);
-			System.out.println("pubcheck 11  is : " + check11);
-			boolean check12 = striples[12].check(pubkind);
-			System.out.println("pubcheck 12 is : " + check12);
+			OwnedStriple pubkind = striples[11];
+			boolean check11 = striples[13].check(pubkind);
+			System.out.println("pubcheck 13  is : " + check11);
+			boolean check12 = striples[15].check(pubkind);
+			System.out.println("pubcheck 15 is : " + check12);
 
 			nosigfile = FileChannel.open(Paths.get("base_nokey_java.data"),
 					StandardOpenOption.WRITE, StandardOpenOption.CREATE);
