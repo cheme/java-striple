@@ -16,7 +16,7 @@ public class StripleMethods {
 
 	static int INIT_TO_SIGBUFF_SIZE = 64;
 	static int INIT_SERBUFF_SIZE = 128;
-	static int ID_LENGTH_BYTES_ENC = 1;
+	static int ID_LENGTH_BYTES_ENC = 2;
 	static int KEY_LENGTH_BYTES_ENC = 2;
 	static int CONTENT_LENGTH_BYTES_ENC = 4;
 	static int CONTIDS_LENGTH_BYTES_ENC = 1;
