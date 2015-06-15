@@ -24,6 +24,11 @@ StripleRef   | StripleImpl
 
 For the time being documentation is very sparse, please refer to rust implementation.
 
+Missing from rust impl :
+- Loadable key kind from env_var
+- Ripemd160/ED25519 owned scheme
+- Storage attached file support (and general striple attached file support)
+
 Overview
 --------
 
